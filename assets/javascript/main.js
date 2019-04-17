@@ -14,16 +14,16 @@ function initMap() {
     method: "GET",
     type: "json",
   }).then(function(response) {
-    console.log(response.results)
+    // console.log(response.results)
     for (var i = 0; i < response.results.length; i++) {
       var coords = response.results[i].geometry.location.lat;
       var coords2 = response.results[i].geometry.location.lng;
-      console.log(coords + " , " +coords2)
       var latLng = new google.maps.LatLng(coords,coords2);
       var marker = new google.maps.Marker({
         position: latLng,
         map: map,
       });
+      console.log(marker)
     }
   });
           
