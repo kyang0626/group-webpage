@@ -16,6 +16,18 @@ html {
     color: black;
 }
 
+/* Navbar */
+a.navbar-brand {
+    font-size: 40px;
+    margin: 0px 20px 0px 5px;
+}
+#brand {
+    color: yellow;
+    font-size: 50px;
+}
+.navbar {
+    height: 60px;
+}
 
 /* ---- Images ---- */
 .img-1 .img-2, .img-3, .img-4 {
@@ -30,17 +42,14 @@ html {
     background-image: url("../images/part1pic.jpeg");
     min-height: 90%;
 }
-
 .img-2 {
     background-color: yellow;
     min-height: 100%;
 }
-
 .img-3 {
     background: white;
     min-height: 100%;
 }
-
 .img-4 {
      background-color: yellow;
      min-height: 100%;
@@ -107,7 +116,9 @@ div.col-lg-3 {
     width: 100%;
     margin: 30px 0px;
     color: black;
-    
+}
+div.col-lg-2 {
+    padding: 0px 0px;
 }
 .icon {
     margin: 20px 0px;
@@ -154,34 +165,9 @@ div.form-group {
     font-size: 18px;
     padding: 20px 0px;
 }
-#first-row {
-    position: relative;
-    left: 150px;
-}
+
 .header-row {
     font-weight: bold;
-}
-
-font-weight: none;
-}
-
-#first-row {
-    text-align: center;
-    position: relative;
-    left: 150px;
-} 
-
-/* Navbar */
-a.navbar-brand {
-    font-size: 40px;
-    margin: 0px 20px 0px 5px;
-}
-#brand {
-    color: yellow;
-    font-size: 50px;
-}
-.navbar {
-    height: 60px;
 }
 
 
@@ -213,7 +199,6 @@ label {
 .logos {
     font-weight: bold;
     font-size: 20px;
-    
 }
 
 /*  Bottom Logos */
@@ -248,4 +233,7 @@ footer {
     width: 100%;
     color: black;
     font-size: 10px;
-    
+}
+#first-row {
+   margin: 0px 0px;
+}
