@@ -5,7 +5,6 @@ body {
     font-weight: 400;
     line-height: 1.8em;
     color: black;
-
 }
 
 html {
@@ -14,26 +13,22 @@ html {
     font-size: 16px;
     font-weight: 400p;
     list-style: 1.8em;
-    color: #666;
-
+    color: black;
 }
 
 
 /* ---- Images ---- */
 .img-1 .img-2, .img-3, .img-4 {
     position: relative;
-    
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 
     background-attachment: scroll;
 }
-
 .img-1 {
     background-image: url("../images/part1pic.jpeg");
     min-height: 90%;
-    
 }
 
 .img-2 {
@@ -51,7 +46,6 @@ html {
      min-height: 100%;
 }
 
-
 /* ---- Content  ---- */
 .content1 {
     text-align: center;
@@ -62,21 +56,6 @@ html {
 .content3 {
     text-align: center;
 }
-p {
-    color: black; 
-}
-
-.p2 {
-    font-size: 30px;
-    font-weight: bold;
-    font-style: italic;
-    padding: 20px 0px 0px 40px;
-    text-shadow: 4px 8px 10px black;
-
-}
-
-
-
 
 .brand {
     font-size: 65px;
@@ -88,6 +67,8 @@ p {
 
 
 /* ---- Text Images ---- */
+
+/* Text on page 1*/
  .img-text1 {
     padding: 100px 0px 0px 0px;
     text-align: center;
@@ -99,21 +80,28 @@ p {
                  0px 18px 23px rgba(0,0,0,0.1);
 }
 
+/* Text on page 1 */
+.p2 {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 20px 0px 0px 40px;
+    text-shadow: 4px 8px 10px black;
+}
+
+
+                                            /* Section 2 */
 .img-text2 {
-  
     text-align: center;
     font-size: 25px;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: black;
-    padding: 20px 0px 0px 0px;
     font-weight: bold;
+    padding: 20px 0px;
 }
 
 
-div.container {
-    text-align: center;
-}
 div.col-lg-3 {
     border: none;
     width: 100%;
@@ -121,7 +109,6 @@ div.col-lg-3 {
     color: black;
     
 }
-
 .icon {
     margin: 20px 0px;
 }
@@ -137,31 +124,47 @@ p {
 div.form-group {
     margin-left: 500px;
 }
+/* "HOW" word on Section 2 */
+.p {
+    font-size: 60px;
+    color: red;
+    font-weight: bold;
+    margin-right: 500px;
+    position: relative;
+    bottom: -60px;
+    left: -40px;
+}
 
 
-/* Part 3 */
+                                        /* Section 3 */
 .img-text3 {
     text-align: center;
 
-
 }
 
 
-/* Part 4 */
+
+                                        /* Section 4 */
 .img-text4 {
     text-align: center;
-    padding: 100px 0px 0px 0px;
 }
-
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+.section-intro {
+    color: white;
+    text-shadow: 0px 0px 2px black;
+    font-size: 18px;
+    padding: 20px 0px;
 }
-
+#first-row {
+    position: relative;
+    left: 150px;
+}
 .header-row {
     font-weight: bold;
 }
+
+font-weight: none;
+}
+
 #first-row {
     text-align: center;
     position: relative;
@@ -176,6 +179,9 @@ a.navbar-brand {
 #brand {
     color: yellow;
     font-size: 50px;
+}
+.navbar {
+    height: 60px;
 }
 
 
@@ -196,15 +202,50 @@ label {
     letter-spacing: 2px;
 }
 
-#div.row {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-}
-
+/* button */
 .btn {
     background-color: yellow;
     color: white;
     margin-left: 20px;
-    box-shadow: 0px 2px 4px black;
+    box-shadow: 0px 2px 2px black;
 }
+
+.logos {
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+/*  Bottom Logos */
+.fab.fa-bootstrap {
+    color: purple;
+}
+
+.fab.fa-font-awesome {
+    color: rgb(0, 132, 255);
+}
+
+.fab.fa-google {
+    color: rgb(0, 132, 255);
+}
+
+.question {
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    text-shadow: 0px 0px 4px black;
+    padding: 20px 0px 0px 0px;
+}
+
+.advertisement {
+    padding: 10px 0px;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    font-size: 10px;
+    
