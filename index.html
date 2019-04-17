@@ -48,7 +48,9 @@
         </li>
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="search" placeholder="Search Food" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <button class="btn btn-outline-success my-2 my-sm-0"
+            style="border: 1px solid yellow; background: white; color: yellow; text-shadow: 0px 0px 2px black;"
+            type="submit">Search</button>
         </form>
     </div>
   </nav>
@@ -65,8 +67,12 @@
         Try <span id="brand">N'STANT</span>
       </p>
       <label for="search-input">Enter your address below</label>
+      <div class="form-inline">
+        <input type="search" class="form-control" id="user-location" placeholder="Street, address, city, state">
+        <button type="button>" style="background-color: rgb(218, 218, 0); color: white; text-shadow: 0px 2px 4px black;"
+          class="btn">Search</button>
+      </div>
 
-      <input type="search" class="form-control" id="user-location" placeholder="Street, address, city, state">
 
     </div>
   </div>
@@ -74,6 +80,8 @@
   <!-- Second Section-->
   <div class="img-2">
     <div class="img-text2">
+      <span class="p">HOW To</span>
+      <br>
       <span class="border-trans">get your food this <span class="brand"> N'STANT <i
             class="fas fa-utensils-alt"></i></span></span>
       <!-- Take off black border when done with rows and columns -->
@@ -100,13 +108,16 @@
 
           </div>
           <div class="col-lg-3">
-            <img class="icon" src="../group-webpage/assets/images/location-icon.png" width=100px height=100px alt=""> <!-- Insert Custom Image-->
+            <img class="icon" src="../group-webpage/assets/images/location-icon.png" width=100px height=100px alt="">
+            <!-- Insert Custom Image-->
           </div>
           <div class="col-lg-3">
-            <img class="icon" src="../group-webpage/assets/images/food-icon.png" width=100px height=100px alt=""> <!-- Insert Custom Image-->
+            <img class="icon" src="../group-webpage/assets/images/food-icon.png" width=100px height=100px alt="">
+            <!-- Insert Custom Image-->
           </div>
           <div class="col-lg-3">
-            <img class="icon" src="../group-webpage/assets/images/submit-icon.png" width=100px height=100px alt=""> <!-- Insert Custom Image-->
+            <img class="icon" src="../group-webpage/assets/images/submit-icon.png" width=100px height=100px alt="">
+            <!-- Insert Custom Image-->
           </div>
           <div class="col-lg-2">
 
@@ -131,11 +142,13 @@
   <!-- Fourth Section-->
   <div class="img-4">
     <div class="img-text4">
-      
+      <div class="section-intro"><span class="question">What is N'STANT?</span><br><br>N'Stant is a way to decide on
+        what to eat at the time, the place. <br>It helps by having a list of suggesstions near or far from your
+        location.</div>
       <div id="legal-info" class="containter">
-        <div class="row">
+        <div class="row" id="first-row">
           <div class="col-lg-3">
-            <ul> Get to know us
+            <ul style="list-style-type: none;"><span class="header-row">Get to know us</span>
               <li>Julie Morrison</li>
               <li>Kong Yang</li>
               <li>Yawo Tsevi</li>
@@ -143,15 +156,28 @@
             </ul>
           </div>
           <div class="col-lg-3">
-            Useful Links
+            <ul style="list-style-type: none;"><span class="header-row">Useful Links</span>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+            </ul>
           </div>
           <div class="col-lg-3">
-            Connect with us
+            <ul style="list-style-type: none;"><span class="header-row">Connect with us</span>
+              <li><a href="https://www.facebook.com">Facebook</a></li>
+              <li><a href="https://www.instagram.com">Instagram</a></li>
+              <li><a href="https://www.twiter.com">Twitter</a></li>
+            </ul>
           </div>
         </div>
       </div>
       <hr>
-      Advetising Part
+      <div class="advertisement">
+        <!-- Add more content -->
+        This webpage was powered using <br><br><br><span class="logos"><i class="fab fa-bootstrap fa-2x"></i> Bootstrap,
+          <i class="fab fa-font-awesome fa-2x"></i> FontAwesomeIcons, <i class="fab fa-google fa-2x"></i> Google
+          Fonts.</span>
+      </div>
       <hr>
       <footer>@2019 UNCC FSF Cohort All rights reserved.</footer>
     </div>
