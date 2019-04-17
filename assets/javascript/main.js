@@ -1,12 +1,4 @@
 
-function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-  infoWindow.setPosition(pos);
-  infoWindow.setContent(browserHasGeolocation ?
-                        'Error: The Geolocation service failed.' :
-                        'Error: Your browser doesn\'t support geolocation.');
-  infoWindow.open(map);
-}
-
 
 
 
@@ -17,24 +9,25 @@ function initMap() {
     zoom: 6
   });
 
-          // Create a <script> tag and set the USGS URL as the source.
-          var script = document.createElement('script');
-          // This example uses a local copy of the GeoJSON stored at
-          // http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojsonp
-          script.src = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=35.228335699999995,-80.8350273&radius=1500&type=restaurant&key=AIzaSyCI9kOmD6qcO2ZqWFHed6KFmxZ8PT6CK8E';
-          document.getElementsByTagName('head')[0].appendChild(script);
-
-          window.restaurants = function(results) {
-            for (var i = 0; i < results.length; i++) {
-              var coords = results.results[i].geometry.location.lat +","+ results.results[i].geometry.location.lng;
-              console.log(coords)
-              var latLng = new google.maps.LatLng(coords);
-              var marker = new google.maps.Marker({
-                position: latLng,
-                map: map
-              });
-            }
-          }
+  $.ajax({
+    url: "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=35.228335699999995,-80.8350273&radius=1500&type=restaurant&key=AIzaSyCI9kOmD6qcO2ZqWFHed6KFmxZ8PT6CK8E",
+    method: "GET",
+    type: "json",
+  }).then(function(response) {
+    console.log(response.results)
+    for (var i = 0; i < response.results.length; i++) {
+      var coords = response.results[i].geometry.location.lat;
+      var coords2 = response.results[i].geometry.location.lng;
+      console.log(coords + " , " +coords2)
+      var latLng = new google.maps.LatLng(coords,coords2);
+      var marker = new google.maps.Marker({
+        position: latLng,
+        map: map,
+      });
+    }
+  });
+          
+          
 
   infoWindow = new google.maps.InfoWindow;
 
@@ -45,7 +38,7 @@ function initMap() {
         lat: position.coords.latitude,
         lng: position.coords.longitude
       };
-      console.log(pos)
+      // console.log(pos)
 
       infoWindow.setPosition(pos);
       infoWindow.setContent('Location found.');
@@ -65,5 +58,13 @@ $.ajax({
   method: "GET",
   type: "json",
 }).then(function(response) {
-  console.log(response.results);
+  // console.log(response.results);
 });
+
+function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+  infoWindow.setPosition(pos);
+  infoWindow.setContent(browserHasGeolocation ?
+                        'Error: The Geolocation service failed.' :
+                        'Error: Your browser doesn\'t support geolocation.');
+  infoWindow.open(map);
+}
