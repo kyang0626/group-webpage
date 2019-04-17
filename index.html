@@ -65,8 +65,11 @@
         Try <span id="brand">N'STANT</span>
       </p>
       <label for="search-input">Enter your address below</label>
+      <div class="form-inline">
+        <input type="search" class="form-control" id="user-location" placeholder="Street, address, city, state">
+        <button type="button>" style="background-color: yellow; color: white; text-shadow: 0px 2px 4px black;" class="btn">Search</button>
+      </div>
 
-      <input type="search" class="form-control" id="user-location" placeholder="Street, address, city, state">
 
     </div>
   </div>
@@ -100,13 +103,16 @@
 
           </div>
           <div class="col-lg-3">
-            <img class="icon" src="../group-webpage/assets/images/location-icon.png" width=100px height=100px alt=""> <!-- Insert Custom Image-->
+            <img class="icon" src="../group-webpage/assets/images/location-icon.png" width=100px height=100px alt="">
+            <!-- Insert Custom Image-->
           </div>
           <div class="col-lg-3">
-            <img class="icon" src="../group-webpage/assets/images/food-icon.png" width=100px height=100px alt=""> <!-- Insert Custom Image-->
+            <img class="icon" src="../group-webpage/assets/images/food-icon.png" width=100px height=100px alt="">
+            <!-- Insert Custom Image-->
           </div>
           <div class="col-lg-3">
-            <img class="icon" src="../group-webpage/assets/images/submit-icon.png" width=100px height=100px alt=""> <!-- Insert Custom Image-->
+            <img class="icon" src="../group-webpage/assets/images/submit-icon.png" width=100px height=100px alt="">
+            <!-- Insert Custom Image-->
           </div>
           <div class="col-lg-2">
 
@@ -131,11 +137,11 @@
   <!-- Fourth Section-->
   <div class="img-4">
     <div class="img-text4">
-      
+
       <div id="legal-info" class="containter">
-        <div class="row">
+        <div class="row" id="first-row">
           <div class="col-lg-3">
-            <ul> Get to know us
+            <ul style="list-style-type: none;"><span class="header-row">Get to know us</span>
               <li>Julie Morrison</li>
               <li>Kong Yang</li>
               <li>Yawo Tsevi</li>
@@ -143,15 +149,25 @@
             </ul>
           </div>
           <div class="col-lg-3">
-            Useful Links
+            <ul style="list-style-type: none;"><span class="header-row">Useful Links</span>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+            </ul>
           </div>
           <div class="col-lg-3">
-            Connect with us
+            <ul style="list-style-type: none;"><span class="header-row">Connect with us</span>
+              <li><a href="https://www.facebook.com">Facebook</a></li>
+              <li><a href="https://www.instagram.com">Instagram</a></li>
+              <li><a href="https://www.twiter.com">Twitter</a></li>
+            </ul>
           </div>
         </div>
       </div>
       <hr>
-      Advetising Part
+      <div class="advertisement"> <!-- Add more content -->
+        This webpage was powered using Bootstrap, FontAwesomeIcons, Google Fonts. 
+      </div>
       <hr>
       <footer>@2019 UNCC FSF Cohort All rights reserved.</footer>
     </div>
