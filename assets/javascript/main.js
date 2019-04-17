@@ -8,13 +8,7 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
 }
 
 
-$.ajax({
-  url: "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=35.228335699999995,-80.8350273&radius=1500&type=restaurant&key=AIzaSyCI9kOmD6qcO2ZqWFHed6KFmxZ8PT6CK8E",
-  method: "GET",
-  type: "json",
-}).then(function(response) {
-  console.log(response.results);
-});
+
 
 var map, infoWindow;
 function initMap() {
@@ -30,7 +24,7 @@ function initMap() {
           script.src = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=35.228335699999995,-80.8350273&radius=1500&type=restaurant&key=AIzaSyCI9kOmD6qcO2ZqWFHed6KFmxZ8PT6CK8E';
           document.getElementsByTagName('head')[0].appendChild(script);
 
-          window.eqfeed_callback = function(results) {
+          window.restaurants = function(results) {
             for (var i = 0; i < results.length; i++) {
               var coords = results.results[i].geometry.location.lat +","+ results.results[i].geometry.location.lng;
               console.log(coords)
@@ -66,3 +60,10 @@ function initMap() {
   }
 }
 
+$.ajax({
+  url: "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=35.228335699999995,-80.8350273&radius=1500&type=restaurant&key=AIzaSyCI9kOmD6qcO2ZqWFHed6KFmxZ8PT6CK8E",
+  method: "GET",
+  type: "json",
+}).then(function(response) {
+  console.log(response.results);
+});
