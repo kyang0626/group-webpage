@@ -68,21 +68,21 @@ function initMap() {
             });
 
             var tBody = $("tbody")
-var tRow = $("<tr>");
+              var tRow = $("<tr>");
 
-var restName = $("<td>").text(response.results[i].name);
-var restAddress = $("<td>").text(response.results[i].vicinity);
-var restRating = $("<td>").text(response.results[i].rating);
-var restPrice = $("<td>").text(response.results[i].price_level);
-tRow.append(restName, restAddress, restRating, restPrice)
-tBody.append(tRow)
+              var restName = $("<td>").text(response.results[i].name);
+              var restAddress = $("<td>").text(response.results[i].vicinity);
+              var restRating = $("<td>").text(response.results[i].rating);
+              var restPrice = $("<td>").text(response.results[i].price_level);
+              tRow.append(restName, restAddress, restRating, restPrice)
+              tBody.append(tRow)
 
             console.log("name: "+ response.results[i].name + " address: "+ response.results[i].vicinity + " rating: "+ response.results[i].rating + " price: "+ response.results[i].price_level)
             // $("#location]-Info").text("name: "+ response.results[i].name + " address: "+ response.results[i].vicinity + " rating: "+ response.results[i].rating + " price: "+ response.results[i].price_level)
             // console.log(marker)
 
-            $("#location-Info").append("name: "+ response.results[i].name + "<br>"+" address: "+ response.results[i].vicinity + "<br>"+" rating: "+ response.results[i].rating + "<br>"+" price: "+ response.results[i].price_level+"<br>" + "--------------" + "<br>")
-            console.log("name: "+ response.results[i].name + "<br>"+" address: "+ response.results[i].vicinity + "<br>"+" rating: "+ response.results[i].rating + "<br>"+" price: "+ response.results[i].price_level+"<br>" + "--------------" + "<br>")
+            // $("#location-Info").append("name: "+ response.results[i].name + "<br>"+" address: "+ response.results[i].vicinity + "<br>"+" rating: "+ response.results[i].rating + "<br>"+" price: "+ response.results[i].price_level+"<br>" + "--------------" + "<br>")
+            // console.log("name: "+ response.results[i].name + "<br>"+" address: "+ response.results[i].vicinity + "<br>"+" rating: "+ response.results[i].rating + "<br>"+" price: "+ response.results[i].price_level+"<br>" + "--------------" + "<br>")
           }
         });
       }, function() {
