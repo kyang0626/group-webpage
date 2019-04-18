@@ -25,6 +25,8 @@ body {
     position: relative;
     margin-top: 200px;
     width: 200%;
+    z-index: 1;
+    justify-content: center;
 }
 
 #msform fieldset {
