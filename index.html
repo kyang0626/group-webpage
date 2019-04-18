@@ -55,128 +55,145 @@
       <p class="p2">
         Try <span id="brand">N'STANT</span>
       </p>
-      <!-- <label for="search-input">Enter your address below</label>
-      <div class="form-inline">
-        <input type="search" class="form-control" id="user-location" placeholder="Street, address, city, state">
-        <button type="button>" style="background-color: rgb(218, 218, 0); color: white; text-shadow: 0px 2px 4px black;"
-          class="btn">Search</button> -->
+      <!-- MultiStep Form -->
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <form style="width:100%; height:100%" id="msform">
+            <!-- progressbar -->
+            <ul id="progressbar">
+              <li class="active">Location</li>
+              <li>Food Preferences</li>
+              <li>Price</li>
+            </ul>
+            <!-- fieldsets -->
+            <fieldset>
+              <h2 class="fs-title">What's Your Location?</h2>
+              <h3 class="fs-subtitle">Click Button to Use Geolocator</h3>
+              <form action="index.html" method="post">
+                <!-- <button id="location">Use My Location</button> -->
+                <button id="location" type="button" class="btn btn-outline-warning btn-lg btn-block">Use My Location</button>
+                <!-- <input type="text" name="phone" placeholder="Address" /> -->
+                <input type="button" name="next" class="next action-button" value="Next" />
+            </fieldset>
+            <fieldset style="width:100%; height:100%;">
+              <div id="map"></div>
+              <input type="button" name="next" class="next action-button" value="Next" />
+            </fieldset>
+            <fieldset>
+              <h2 class="fs-title">You Restaurant Options</h2>
+              <h3 class="fs-subtitle">Get Your Food This N'STANT!</h3>
+      
     </div>
 
-    <!-- MultiStep Form -->
+    
+
+
+<!--  Restaurant Table within MultiStep Form  -->
+
     <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <form id="msform">
-          <!-- progressbar -->
-          <ul id="progressbar">
-            <li class="active">Location</li>
-            <li>Food Preferences</li>
-            <li>Price</li>
-          </ul>
-          <!-- fieldsets -->
-          <fieldset>
-            <h2 class="fs-title">What's Your Location?</h2>
-            <h3 class="fs-subtitle">Click Button to Use Geolocator or Manually Enter Location</h3>
-            <form action="index.html" method="post">
-              <button id="location" >Use My Location</button>
-            <input type="text" name="phone" placeholder="Address" />
-            <input type="button" name="next" class="next action-button" value="Next" />
-          </fieldset>
-          <fieldset>
-            <h2 class="fs-title">What's Your Food Preference?</h2>
-            <h3 class="fs-subtitle">Select From The List:</h3>
-            <input type="text" name="twitter" placeholder="Twitter" />
-            <input type="text" name="facebook" placeholder="Facebook" />
-            <input type="text" name="gplus" placeholder="Google Plus" />
-            <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
-            <input type="button" name="next" class="next action-button" value="Next" />
-          </fieldset>
-          <fieldset>
-            <h2 class="fs-title">What's Your Budget?</h2>
-            <h3 class="fs-subtitle">Select From The List:</h3>
+      <div class="col-xs-12 col-sm-9">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title"></h3>
+          </div>
+          <div class="panel-body">
+            <table class="table table-hover" id="restaurant-table">
+              <thead>
+                <tr>
+                  <th>Restaurant Name</th>
+                  <th>Restaurant Address</th>
+                  <th class="text-center">Restaurant Rating</th>
+                  <th class="text-center">Restaurant Price</th>
+                </tr>
+              </thead>
+              <tbody id="restaurant-table-rows">
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+
+            <!-- <h3 class="fs-subtitle">Select From The List:</h3>
             <input type="text" name="email" placeholder="Email" />
             <input type="password" name="pass" placeholder="Password" />
-            <input type="password" name="cpass" placeholder="Confirm Password" />
+            <input type="password" name="cpass" placeholder="Confirm Password" /> -->
             <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
-            <input type="submit" name="submit" class="submit action-button" value="Submit" />
+            <!-- <input type="submit" name="submit" class="submit action-button" value="Submit" /> -->
           </fieldset>
         </form>
 
       </div>
     </div>
-    <!-- /.MultiStep Form -->
+
+
+
+
+      <!-- /.MultiStep Form -->
 
 
 
 
 
-    <!-- Second Section-->
-    <div class="img-2">
-      <div class="img-text2">
-        <span class="p">HOW To</span>
-        <br>
-        <span class="border-trans">get your food this <span class="brand"> N'STANT <i
-              class="fas fa-utensils-alt"></i></span></span>
-        <!-- Take off black border when done with rows and columns -->
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-1">
+      <!-- Second Section-->
+      <div class="img-2">
+        <div class="img-text2">
+          <span class="p">HOW To</span>
+          <br>
+          <span class="border-trans">get your food this <span class="brand"> N'STANT <i
+                class="fas fa-utensils-alt"></i></span></span>
+          <!-- Take off black border when done with rows and columns -->
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-1">
 
-            </div>
-            <div class="col-lg-3">
-              Enter Your Location
-            </div>
-            <div class="col-lg-3">
-              Choose Your Type of Food
-            </div>
-            <div class="col-lg-3">
-              Submit your input
-            </div>
-            <div class="col-lg-2">
+              </div>
+              <div class="col-lg-3">
+                Enter Your Location
+              </div>
+              <div class="col-lg-3">
+                Choose Your Type of Food
+              </div>
+              <div class="col-lg-3">
+                Submit your input
+              </div>
+              <div class="col-lg-2">
 
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-1">
+            <div class="row">
+              <div class="col-lg-1">
 
-            </div>
-            <div class="col-lg-3">
-              <img class="icon" src="../group-webpage/assets/images/location-icon.png" width=100px height=100px alt="">
-              <!-- Insert Custom Image-->
-            </div>
-            <div class="col-lg-3">
-              <img class="icon" src="../group-webpage/assets/images/food-icon.png" width=100px height=100px alt="">
-              <!-- Insert Custom Image-->
-            </div>
-            <div class="col-lg-3">
-              <img class="icon" src="../group-webpage/assets/images/submit-icon.png" width=100px height=100px alt="">
-              <!-- Insert Custom Image-->
-            </div>
-            <div class="col-lg-2">
+              </div>
+              <div class="col-lg-3">
+                <img class="icon" src="../group-webpage/assets/images/location-icon.png" width=100px height=100px
+                  alt="">
+                <!-- Insert Custom Image-->
+              </div>
+              <div class="col-lg-3">
+                <img class="icon" src="../group-webpage/assets/images/food-icon.png" width=100px height=100px alt="">
+                <!-- Insert Custom Image-->
+              </div>
+              <div class="col-lg-3">
+                <img class="icon" src="../group-webpage/assets/images/submit-icon.png" width=100px height=100px alt="">
+                <!-- Insert Custom Image-->
+              </div>
+              <div class="col-lg-2">
 
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Third Section -->
-  <div class="row" style="width:100%; height:100%">
-      <div class="col-6" id="map" ></div>
+    <!-- Third Section -->
+    <div class="row" style="width:100%; height:100%">
+      <div class="col-6" id="map"></div>
       <div class="col-6">
         <div id="location-Info"></div>
       </div>
-</div>
-
-  <!-- Fourth Section-->
-  <div class="img-4">
-    <div class="img-text4">
-      <div class="section-intro"><span class="question">What is N'STANT?</span><br><br>N'Stant is a way to decide on
-        what to eat at the time, the place. <br>It helps by having a list of suggesstions near or far from your
-        location.</div>
-      <div id="legal-info" class="containter">
-        <div class="row" id="first-row">
-          <div class="col-lg-1">
+    </div>
 
           </div>
           <div class="col-lg-3">
@@ -196,32 +213,64 @@
               <li><a href="https://www.instagram.com">Instagram</a></li>
               <li><a href="https://www.twiter.com">Twitter</a></li>
             </ul>
+    <!-- Fourth Section-->
+    <div class="img-4">
+      <div class="img-text4">
+        <div class="section-intro"><span class="question">What is N'STANT?</span><br><br>N'Stant is a way to decide on
+          what to eat at the time, the place. <br>It helps by having a list of suggesstions near or far from your
+          location.</div>
+        <div id="legal-info" class="containter">
+          <div class="row" id="first-row">
+            <div class="col-lg-1">
+
+            </div>
+            <div class="col-lg-3">
+              <ul style="list-style-type: none;"><span class="header-row">Get to know us</span>
+                <li>Julie Morrison</li>
+                <li>Kong Yang</li>
+                <li>Yawo Tsevi</li>
+                <li>Jeremiah Thorn</li>
+              </ul>
+            </div>
+            <div class="col-lg-3">
+              <ul style="list-style-type: none;"><span class="header-row">Useful Links</span>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+              </ul>
+            </div>
+            <div class="col-lg-3">
+              <ul style="list-style-type: none;"><span class="header-row">Connect with us</span>
+                <li><a href="https://www.facebook.com">Facebook</a></li>
+                <li><a href="https://www.instagram.com">Instagram</a></li>
+                <li><a href="https://www.twiter.com">Twitter</a></li>
+              </ul>
+            </div>
           </div>
         </div>
+        <hr>
+        <div class="advertisement">
+          <!-- Add more content -->
+          This webpage was powered using <br><br><br><span class="logos"><i class="fab fa-bootstrap fa-2x"></i>
+            Bootstrap,
+            <i class="fab fa-font-awesome fa-2x"></i> FontAwesomeIcons, <i class="fab fa-google fa-2x"></i> Google
+            Fonts.</span>
+        </div>
+        <hr>
+        <footer>@2019 UNCC FSF Cohort All rights reserved.</footer>
       </div>
-      <hr>
-      <div class="advertisement">
-        <!-- Add more content -->
-        This webpage was powered using <br><br><br><span class="logos"><i class="fab fa-bootstrap fa-2x"></i> Bootstrap,
-          <i class="fab fa-font-awesome fa-2x"></i> FontAwesomeIcons, <i class="fab fa-google fa-2x"></i> Google
-          Fonts.</span>
-      </div>
-      <hr>
-      <footer>@2019 UNCC FSF Cohort All rights reserved.</footer>
     </div>
-  </div>
 
 
 
 
-  <!--- JavaScript --->
-  <script src="../group-webpage/assets/javascript/multistepform.js"></script>
-  <!-- -JavaScript Form Source --->
-  <script src="../group-webpage/assets/javascript/main.js"></script>
-  <!--Maps API-->
-  <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI9kOmD6qcO2ZqWFHed6KFmxZ8PT6CK8E&callback=initMap">
-    </script>
+    <!--- JavaScript --->
+    <script src="../group-webpage/assets/javascript/multistepform.js"></script>
+    <script src="../group-webpage/assets/javascript/main.js"></script>
+    <!--Maps API-->
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI9kOmD6qcO2ZqWFHed6KFmxZ8PT6CK8E&callback=initMap">
+      </script>
 </body>
 
 </html>

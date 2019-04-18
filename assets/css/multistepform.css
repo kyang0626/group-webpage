@@ -19,12 +19,23 @@ body {
     background: transparent;
 }
 
+/* location button style */
+#location {
+font-family: 'Montserrat', arial, verdana;
+border:8px;
+font-weight: bold;
+font-size: 28px;
+
+}
+
 /*form styles*/
 #msform {
     text-align: center;
     position: relative;
     margin-top: 200px;
     width: 200%;
+    z-index: 1;
+    justify-content: center;
 }
 
 #msform fieldset {
@@ -36,6 +47,7 @@ body {
     box-sizing: border-box;
     width: 80%;
     margin: 0 10%;
+    margin-left: 50%;
 
     /*stacking fieldsets above each other*/
     position: relative;
@@ -90,9 +102,9 @@ body {
 
 #msform .action-button-previous {
     width: 100px;
-    background: #C5C5F1;
+    background: orange;
     font-weight: bold;
-    color: white;
+    color: black;
     border: 0 none;
     border-radius: 25px;
     cursor: pointer;
@@ -101,7 +113,7 @@ body {
 }
 
 #msform .action-button-previous:hover, #msform .action-button-previous:focus {
-    box-shadow: 0 0 0 3px white, 0 0 0 4px #C5C5F1;
+    box-shadow: 0 0 0 3px white, 0 0 0 4px yellow;
 }
 
 /*headings*/
