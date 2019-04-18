@@ -47,7 +47,7 @@ font-size: 28px;
     box-sizing: border-box;
     width: 80%;
     margin: 0 10%;
-    margin-left: 50%;
+    margin-left: 60%;
 
     /*stacking fieldsets above each other*/
     position: relative;
@@ -139,6 +139,7 @@ font-size: 28px;
     overflow: hidden;
     /*CSS counters to number the steps*/
     counter-reset: step;
+    margin-left: 50%;
 }
 
 #progressbar li {
