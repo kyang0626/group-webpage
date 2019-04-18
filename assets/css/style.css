@@ -50,6 +50,8 @@ a.navbar-brand {
 .img-3 {
     background: white;
     min-height: 100%;
+    min-width: 40%;
+    
 }
 .img-4 {
      background-color: yellow;
@@ -96,9 +98,8 @@ a.navbar-brand {
     font-weight: bold;
     font-style: italic;
     padding: 20px 0px 0px 40px;
-    text-shadow: 4px 8px 10px black;
+    text-shadow: 4px 8px 10px black,
 }
-
 
                                             /* Section 2 */
 .img-text2 {
@@ -118,6 +119,15 @@ div.col-lg-3 {
     margin: 30px 0px;
     color: black;
 }
+li {
+    color: white;
+    text-shadow: 1px 1px 2px black,
+                 -1px -1px 4px black;
+}
+a{
+    text-shadow: none;
+}
+
 div.col-lg-2 {
     padding: 0px 0px;
 }
@@ -168,6 +178,7 @@ div.form-group {
 
 .header-row {
     font-weight: bold;
+    color: black;
 }
 
 
@@ -244,8 +255,8 @@ div.row {
 /* Always set the map height explicitly to define the size of the div
  * element that contains the map. */
  #map {
-    width: 100%;
+    width: 60%;
     height: 100%;
-   
   }
 
+ 
