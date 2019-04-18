@@ -8,9 +8,9 @@
 }
 
 html {
-    height: 100%;
-    background: yellow; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, rgb(248, 170, 69), #df4d29); /* Chrome 10-25, Safari 5.1-6 */
+    /* height: 100%;*/
+    background: yellow; fallback for old browsers
+    background: -webkit-linear-gradient(to left, rgb(248, 170, 69), #df4d29); Chrome 10-25, Safari 5.1-6
 
 }
 
@@ -135,7 +135,7 @@ font-size: 28px;
 
 /*progressbar*/
 #progressbar {
-    margin-bottom: 30px;
+    margin-bottom: 8px;
     margin-left: 50%;
     overflow: hidden;
     width:100%;
@@ -148,7 +148,7 @@ font-size: 28px;
     color: white;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 18px;
     width: 33.33%;
     float: left;
     position: relative;
