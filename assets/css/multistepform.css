@@ -34,6 +34,8 @@ font-size: 28px;
     position: relative;
     margin-top: 200px;
     width: 200%;
+    z-index: 1;
+    justify-content: center;
 }
 
 #msform fieldset {
@@ -45,6 +47,7 @@ font-size: 28px;
     box-sizing: border-box;
     width: 80%;
     margin: 0 10%;
+    margin-left: 50%;
 
     /*stacking fieldsets above each other*/
     position: relative;
