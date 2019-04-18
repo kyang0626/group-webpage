@@ -17,6 +17,7 @@ function initMap() {
           lat: position.coords.latitude,
           lng: position.coords.longitude
         };
+        console.log(position)
         // console.log(pos)
         // console.log(pos.lat)
         // console.log(pos.lng)
