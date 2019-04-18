@@ -1,42 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<meta content="ie=edge" http-equiv="X-UA-Compatible">
-	<title>iLocate</title>
-	<link href="./assets/css/style.css" rel="stylesheet" type="text/css">
-	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-	<link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>N'Stant</title>
+  <!--- CSS --->
+  <link rel="stylesheet" type="text/css" href="../group-webpage/assets/css/style.css">
+  <!-- Multistep Form CSS -->
+  <link rel="stylesheet" type="text/css" href="../group-webpage/assets/css/multistepform.css">
+  
+  <!---- Bootstrap --->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <script src="http://code.jquery.com/jquery-3.4.0.min.js"
-  integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
-  <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI9kOmD6qcO2ZqWFHed6KFmxZ8PT6CK8E&libraries=places"></script> -->
-
-  <script src="https://apis.google.com/js/api.js"></script>
-
-<script>
-  jQuery.ajaxPrefilter(function(options) {
-    if (options.crossDomain && jQuery.support.cors) {
-        options.url = 'https://uncc-cors-proxy.herokuapp.com/' + options.url;
-    }
-  });
-</script>
-
-
+  <!--- Font Awesome Icons --->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!--- Jquery --->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js"></script>
 </head>
+
 <body>
 
-  <div id="map"></div>
-  <button id="button">Button</button>
+  <!-- Navbar --->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: white;">
+    <a class="navbar-brand" style="color: yellow;" href="https://kyang0626.github.io/group-webpage/"><strong>N'STANT <i class="fas fa-utensils"></i></strong></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search Food" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0"
+            style="border: 1px solid yellow; background: white; color: yellow; text-shadow: 0px 0px 2px black;"
+            type="submit">Search</button>
+        </form>
+    </div>
+  </nav>
+
+  <!-- Content -->
+
+  <!-- First Section -->
+  <div class="img-1">
+    <div class="img-text1">
+      <p>
+        Can't Decide Where To Eat?
+      </p>
+      <p class="p2">
+        Try <span id="brand">N'STANT</span>
+      </p>
+      <!-- <label for="search-input">Enter your address below</label>
+      <div class="form-inline">
+        <input type="search" class="form-control" id="user-location" placeholder="Street, address, city, state">
+        <button type="button>" style="background-color: rgb(218, 218, 0); color: white; text-shadow: 0px 2px 4px black;"
+          class="btn">Search</button> -->
+      </div>
+
+      <!-- MultiStep Form -->
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+      <form id="msform">
+          <!-- progressbar -->
+          <ul id="progressbar">
+              <li class="active">Location</li>
+              <li>Food Preferences</li>
+              <li>Price</li>
+          </ul>
+          <!-- fieldsets -->
+          <fieldset>
+              <h2 class="fs-title">What's Your Location?</h2>
+              <h3 class="fs-subtitle">Enter Your Info:</h3>
+              <input type="text" name="fname" placeholder="Zip Code"/>
+              <input type="text" name="lname" placeholder="City"/>
+              <input type="text" name="phone" placeholder="Address"/>
+              <input type="button" name="next" class="next action-button" value="Next"/>
+          </fieldset>
+          <fieldset>
+              <h2 class="fs-title">What's Your Food Preference?</h2>
+              <h3 class="fs-subtitle">Select From The List:</h3>
+              <input type="text" name="twitter" placeholder="Twitter"/>
+              <input type="text" name="facebook" placeholder="Facebook"/>
+              <input type="text" name="gplus" placeholder="Google Plus"/>
+              <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+              <input type="button" name="next" class="next action-button" value="Next"/>
+          </fieldset>
+          <fieldset>
+              <h2 class="fs-title">What's Your Budget?</h2>
+              <h3 class="fs-subtitle">Select From The List:</h3>
+              <input type="text" name="email" placeholder="Email"/>
+              <input type="password" name="pass" placeholder="Password"/>
+              <input type="password" name="cpass" placeholder="Confirm Password"/>
+              <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+              <input type="submit" name="submit" class="submit action-button" value="Submit"/>
+          </fieldset>
+      </form>
   
-  
-  <!--- JavaScript =-->
-	<script src="./assets/javascript/main.js">
-  </script> 
-  
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI9kOmD6qcO2ZqWFHed6KFmxZ8PT6CK8E&callback=initMap">
-  </script>
-  </script>
+  </div>
+</div>
+<!-- /.MultiStep Form -->
+
+
+    </div>
+  </div>
+
+  <!-- Second Section-->
+  <div class="img-2">
+    <div class="img-text2">
+      <span class="p">HOW To</span>
+      <br>
+      <span class="border-trans">get your food this <span class="brand"> N'STANT <i
+            class="fas fa-utensils-alt"></i></span></span>
+      <!-- Take off black border when done with rows and columns -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-1">
+
+          </div>
+          <div class="col-lg-3">
+            Enter Your Location
+          </div>
+          <div class="col-lg-3">
+            Choose Your Type of Food
+          </div>
+          <div class="col-lg-3">
+            Submit your input
+          </div>
+          <div class="col-lg-2">
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-1">
+
+          </div>
+          <div class="col-lg-3">
+            <img class="icon" src="../group-webpage/assets/images/location-icon.png" width=100px height=100px alt="">
+            <!-- Insert Custom Image-->
+          </div>
+          <div class="col-lg-3">
+            <img class="icon" src="../group-webpage/assets/images/food-icon.png" width=100px height=100px alt="">
+            <!-- Insert Custom Image-->
+          </div>
+          <div class="col-lg-3">
+            <img class="icon" src="../group-webpage/assets/images/submit-icon.png" width=100px height=100px alt="">
+            <!-- Insert Custom Image-->
+          </div>
+          <div class="col-lg-2">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Third Section -->
+  <div id="map" class="img-3"></div>
+
+  <!-- Fourth Section-->
+  <div class="img-4">
+    <div class="img-text4">
+      <div class="section-intro"><span class="question">What is N'STANT?</span><br><br>N'Stant is a way to decide on
+        what to eat at the time, the place. <br>It helps by having a list of suggesstions near or far from your
+        location.</div>
+      <div id="legal-info" class="containter">
+        <div class="row" id="first-row">
+          <div class="col-lg-1">
+
+          </div>
+          <div class="col-lg-3">
+            <ul style="list-style-type: none;"><span class="header-row">Get to know us</span>
+              <li>Julie Morrison</li>
+              <li>Kong Yang</li>
+              <li>Yawo Tsevi</li>
+              <li>Jeremiah Thorn</li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <ul style="list-style-type: none;"><span class="header-row">Useful Links</span>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <ul style="list-style-type: none;"><span class="header-row">Connect with us</span>
+              <li><a href="https://www.facebook.com">Facebook</a></li>
+              <li><a href="https://www.instagram.com">Instagram</a></li>
+              <li><a href="https://www.twiter.com">Twitter</a></li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+      <hr>
+      <div class="advertisement">
+        <!-- Add more content -->
+        This webpage was powered using <br><br><br><span class="logos"><i class="fab fa-bootstrap fa-2x"></i> Bootstrap,
+          <i class="fab fa-font-awesome fa-2x"></i> FontAwesomeIcons, <i class="fab fa-google fa-2x"></i> Google
+          Fonts.</span>
+      </div>
+      <hr>
+      <footer>@2019 UNCC FSF Cohort All rights reserved.</footer>
+    </div>
+  </div>
+
+
+
+
+  <!--- JavaScript --->
+  <script src="../group-webpage/assets/javascript/main.js"></script>
 </body>
+
 </html>

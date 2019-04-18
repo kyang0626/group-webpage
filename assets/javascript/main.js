@@ -58,7 +58,7 @@ function initMap() {
             });
           
             var marker = new google.maps.Marker({
-              position: latLng,
+              position: response.results[i].geometry.location.lat + "," + response.results[i].geometry.location.lng,
               map: map,
               title: response.results[i].name,
             });
