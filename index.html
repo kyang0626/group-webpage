@@ -8,9 +8,6 @@
   <title>N'Stant</title>
   <!--- CSS --->
   <link rel="stylesheet" type="text/css" href="../group-webpage/assets/css/style.css">
-  <!-- Multistep Form CSS -->
-  <!-- <link rel="stylesheet" type="text/css" href="../group-webpage/assets/css/multistepform.css"> -->
-
   <!---- Bootstrap --->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -38,21 +35,13 @@
 <body>
 
   <!-- Navbar --->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: white;">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: white; text-shadow: 1px 1px 2px black, -1px -1px 2px transparent;">
     <a class="navbar-brand" style="color: yellow;" href="https://kyang0626.github.io/group-webpage/"><strong>N'STANT <i
           class="fas fa-utensils"></i></strong></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search Food" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0"
-        style="border: 1px solid yellow; background: white; color: yellow; text-shadow: 0px 0px 2px black;"
-        type="submit">Search</button>
-    </form>
-    </div>
   </nav>
 
   <!-- Content -->
@@ -66,40 +55,37 @@
       <p class="p2">
         Try <span id="brand">N'STANT</span>
       </p>
-      <!-- <label for="search-input">Enter your address below</label>
-      <div class="form-inline">
-        <input type="search" class="form-control" id="user-location" placeholder="Street, address, city, state">
-        <button type="button>" style="background-color: rgb(218, 218, 0); color: white; text-shadow: 0px 2px 4px black;"
-          class="btn">Search</button> -->
+      <!-- MultiStep Form -->
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <form style="width:100%; height:100%" id="msform">
+            <!-- progressbar -->
+            <ul id="progressbar">
+              <li class="active">Location</li>
+              <li>Food Preferences</li>
+              <li>Price</li>
+            </ul>
+            <!-- fieldsets -->
+            <fieldset>
+              <h2 class="fs-title">What's Your Location?</h2>
+              <h3 class="fs-subtitle">Click Button to Use Geolocator</h3>
+              <form action="index.html" method="post">
+                <!-- <button id="location">Use My Location</button> -->
+                <button id="location" type="button" class="btn btn-outline-warning btn-lg btn-block">Use My Location</button>
+                <!-- <input type="text" name="phone" placeholder="Address" /> -->
+                <input type="button" name="next" class="next action-button" value="Next" />
+            </fieldset>
+            <fieldset style="width:100%; height:100%;">
+              <div id="map"></div>
+              <input type="button" name="next" class="next action-button" value="Next" />
+            </fieldset>
+            <fieldset>
+              <h2 class="fs-title">You Restaurant Options</h2>
+              <h3 class="fs-subtitle">Get Your Food This N'STANT!</h3>
+      
     </div>
 
-    <!-- MultiStep Form -->
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <form style="width:100%; height:100%" id="msform">
-          <!-- progressbar -->
-          <ul id="progressbar">
-            <li class="active">Location</li>
-            <li>Food Preferences</li>
-            <li>Price</li>
-          </ul>
-          <!-- fieldsets -->
-          <fieldset>
-            <h2 class="fs-title">What's Your Location?</h2>
-            <h3 class="fs-subtitle">Click Button to Use Geolocator</h3>
-            <form action="index.html" method="post">
-              <!-- <button id="location">Use My Location</button> -->
-              <button id="location" type="button" class="btn btn-outline-warning btn-lg btn-block">Use My Location</button>
-              <!-- <input type="text" name="phone" placeholder="Address" /> -->
-              <input type="button" name="next" class="next action-button" value="Next" />
-          </fieldset>
-          <fieldset style="width:100%; height:100%;">
-            <div id="map"></div>
-            <input type="button" name="next" class="next action-button" value="Next" />
-          </fieldset>
-          <fieldset>
-            <h2 class="fs-title">You Restaurant Options</h2>
-            <h3 class="fs-subtitle">Get Your Food This N'STANT!</h3>
+    
 
 
 <!--  Restaurant Table within MultiStep Form  -->
@@ -209,6 +195,24 @@
       </div>
     </div>
 
+          </div>
+          <div class="col-lg-3">
+            <ul style="list-style-type: none;"><span class="header-row">Get to know us</span>
+              <li>Julie Morrison</li>
+              <li>Kong Yang</li>
+              <li>Yawo Tsevi</li>
+              <li>Jeremiah Thorn</li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            
+          </div>
+          <div class="col-lg-3">
+            <ul style="list-style-type: none;"><span class="header-row">Connect with us</span>
+              <li><a href="https://www.facebook.com">Facebook</a></li>
+              <li><a href="https://www.instagram.com">Instagram</a></li>
+              <li><a href="https://www.twiter.com">Twitter</a></li>
+            </ul>
     <!-- Fourth Section-->
     <div class="img-4">
       <div class="img-text4">
