@@ -109,29 +109,6 @@
                         </tr>
                       </thead>
                       <tbody id="restaurant-table-rows">
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-
-            <div class="row">
-              <div class="col-xs-12 col-sm-9">
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h3 class="panel-title"></h3>
-                  </div>
-                  <div class="panel-body" style="overflow-y: scroll; height: 400px;">
-                    <table class="table table-hover" id="restaurant-table">
-                      <thead>
-                        <tr>
-                          <th>Restaurant Name</th>
-                          <th>Restaurant Address</th>
-                          <th class="text-center">Restaurant Rating</th>
-                          <th class="text-center">Restaurant Price</th>
-                        </tr>
-                      </thead>
-                      <tbody id="restaurant-table-rows">
 
 
 
@@ -146,8 +123,14 @@
             <input type="text" name="email" placeholder="Email" />
             <input type="password" name="pass" placeholder="Password" />
             <input type="password" name="cpass" placeholder="Confirm Password" /> -->
-              <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
-              <!-- <input type="submit" name="submit" class="submit action-button" value="Submit" /> -->
+
+
+              <input id="reload" button id="hidden" type="button" style="visibility:hidden;" name="reload"
+                class="reload action-button" value="Start Over" onclick="window.location.reload()" />
+              <input id="reload" button id="reload" type="button" name="reload" class="reload action-button btn-block" value="Try Again"
+                onclick="window.location.reload()" />
+
+
           </fieldset>
 
         </form>
@@ -161,6 +144,7 @@
     <!-- /.MultiStep Form -->
 
     <!-- /.MultiStep Form -->
+
 
 
 
@@ -182,30 +166,10 @@
               Share Your Location
             </div>
             <div class="col-lg-3">
-              View Map of Restaurants Nearby
+              View a Map of Restaurants Near You
             </div>
             <div class="col-lg-3">
               See Restaurant Options
-            </div>
-            <div class="col-lg-2">
-
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-1">
-
-            </div>
-            <div class="col-lg-3">
-              <img class="icon" src="../group-webpage/assets/images/location-icon.png" width=100px height=100px alt="">
-              <!-- Insert Custom Image-->
-            </div>
-            <div class="col-lg-3">
-              <img class="icon" src="../group-webpage/assets/images/food-icon.png" width=100px height=100px alt="">
-              <!-- Insert Custom Image-->
-            </div>
-            <div class="col-lg-3">
-              <img class="icon" src="../group-webpage/assets/images/submit-icon.png" width=100px height=100px alt="">
-              <!-- Insert Custom Image-->
             </div>
             <div class="col-lg-2">
 
@@ -275,5 +239,3 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI9kOmD6qcO2ZqWFHed6KFmxZ8PT6CK8E&callback=initMap">
     </script>
 </body>
-
-</html>
