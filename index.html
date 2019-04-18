@@ -8,9 +8,6 @@
   <title>N'Stant</title>
   <!--- CSS --->
   <link rel="stylesheet" type="text/css" href="../group-webpage/assets/css/style.css">
-  <!-- Multistep Form CSS -->
-  <!-- <link rel="stylesheet" type="text/css" href="../group-webpage/assets/css/multistepform.css"> -->
-
   <!---- Bootstrap --->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -24,12 +21,12 @@
   <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
   <!---CORS proxy-->
   <script>
-      jQuery.ajaxPrefilter(function(options) {
-        if (options.crossDomain && jQuery.support.cors) {
-            options.url = 'https://uncc-cors-proxy.herokuapp.com/' + options.url;
-        }
-      });
-    </script>
+    jQuery.ajaxPrefilter(function (options) {
+      if (options.crossDomain && jQuery.support.cors) {
+        options.url = 'https://uncc-cors-proxy.herokuapp.com/' + options.url;
+      }
+    });
+  </script>
   <!-- CSS for Form -->
   <link rel="stylesheet" href="../group-webpage/assets/css/multistepform.css">
 
@@ -89,8 +86,8 @@
             <h3 class="fs-subtitle">Click Button to Use Geolocator or Manually Enter Location</h3>
             <form action="index.html" method="post">
               <button>Use My Location</button>
-            <input type="text" name="phone" placeholder="Address" />
-            <input type="button" name="next" class="next action-button" value="Next" />
+              <input type="text" name="phone" placeholder="Address" />
+              <input type="button" name="next" class="next action-button" value="Next" />
           </fieldset>
           <fieldset>
             <h2 class="fs-title">What's Your Food Preference?</h2>
@@ -172,7 +169,14 @@
   </div>
 
   <!-- Third Section -->
-  <div id="map" ></div>
+  <div class="containter">
+    <div id="map"></div>
+    <div class="img-3">
+        
+    </div>
+  </div>
+
+
 
   <!-- Fourth Section-->
   <div class="img-4">
@@ -226,10 +230,12 @@
 
   <!--- JavaScript --->
   <script src="../group-webpage/assets/javascript/multistepform.js"></script>
+  <!-- -JavaScript Form Source --->
   <script src="../group-webpage/assets/javascript/main.js"></script>
   <!--Maps API-->
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI9kOmD6qcO2ZqWFHed6KFmxZ8PT6CK8E&callback=initMap">
-  </script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI9kOmD6qcO2ZqWFHed6KFmxZ8PT6CK8E&callback=initMap">
+    </script>
 </body>
 
 </html>

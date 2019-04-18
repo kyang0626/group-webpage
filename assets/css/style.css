@@ -50,6 +50,8 @@ a.navbar-brand {
 .img-3 {
     background: white;
     min-height: 100%;
+    min-width: 40%;
+    
 }
 .img-4 {
      background-color: yellow;
@@ -244,8 +246,8 @@ div.row {
 /* Always set the map height explicitly to define the size of the div
  * element that contains the map. */
  #map {
-    width: 100%;
+    width: 60%;
     height: 100%;
-   
   }
 
+ 
