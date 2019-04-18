@@ -86,9 +86,9 @@
           <!-- fieldsets -->
           <fieldset>
             <h2 class="fs-title">What's Your Location?</h2>
-            <h3 class="fs-subtitle">Enter Your Info:</h3>
-            <input type="text" name="fname" placeholder="Zip Code" />
-            <input type="text" name="lname" placeholder="City" />
+            <h3 class="fs-subtitle">Click Button to Use Geolocator or Manually Enter Location</h3>
+            <form action="index.html" method="post">
+              <button id="location" >Use My Location</button>
             <input type="text" name="phone" placeholder="Address" />
             <input type="button" name="next" class="next action-button" value="Next" />
           </fieldset>
@@ -120,59 +120,64 @@
 
 
 
-  <!-- Second Section-->
-  <div class="img-2">
-    <div class="img-text2">
-      <span class="p">HOW To</span>
-      <br>
-      <span class="border-trans">get your food this <span class="brand"> N'STANT <i
-            class="fas fa-utensils-alt"></i></span></span>
-      <!-- Take off black border when done with rows and columns -->
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-1">
+    <!-- Second Section-->
+    <div class="img-2">
+      <div class="img-text2">
+        <span class="p">HOW To</span>
+        <br>
+        <span class="border-trans">get your food this <span class="brand"> N'STANT <i
+              class="fas fa-utensils-alt"></i></span></span>
+        <!-- Take off black border when done with rows and columns -->
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-1">
 
-          </div>
-          <div class="col-lg-3">
-            Enter Your Location
-          </div>
-          <div class="col-lg-3">
-            Choose Your Type of Food
-          </div>
-          <div class="col-lg-3">
-            Submit your input
-          </div>
-          <div class="col-lg-2">
+            </div>
+            <div class="col-lg-3">
+              Enter Your Location
+            </div>
+            <div class="col-lg-3">
+              Choose Your Type of Food
+            </div>
+            <div class="col-lg-3">
+              Submit your input
+            </div>
+            <div class="col-lg-2">
 
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-1">
+          <div class="row">
+            <div class="col-lg-1">
 
-          </div>
-          <div class="col-lg-3">
-            <img class="icon" src="../group-webpage/assets/images/location-icon.png" width=100px height=100px alt="">
-            <!-- Insert Custom Image-->
-          </div>
-          <div class="col-lg-3">
-            <img class="icon" src="../group-webpage/assets/images/food-icon.png" width=100px height=100px alt="">
-            <!-- Insert Custom Image-->
-          </div>
-          <div class="col-lg-3">
-            <img class="icon" src="../group-webpage/assets/images/submit-icon.png" width=100px height=100px alt="">
-            <!-- Insert Custom Image-->
-          </div>
-          <div class="col-lg-2">
+            </div>
+            <div class="col-lg-3">
+              <img class="icon" src="../group-webpage/assets/images/location-icon.png" width=100px height=100px alt="">
+              <!-- Insert Custom Image-->
+            </div>
+            <div class="col-lg-3">
+              <img class="icon" src="../group-webpage/assets/images/food-icon.png" width=100px height=100px alt="">
+              <!-- Insert Custom Image-->
+            </div>
+            <div class="col-lg-3">
+              <img class="icon" src="../group-webpage/assets/images/submit-icon.png" width=100px height=100px alt="">
+              <!-- Insert Custom Image-->
+            </div>
+            <div class="col-lg-2">
 
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  </div>
 
   <!-- Third Section -->
-  <div id="map" ></div>
+  <div class="row" style="width:100%; height:100%">
+      <div class="col-6" id="map" ></div>
+      <div class="col-6">
+        <div id="location-Info"></div>
+      </div>
+</div>
 
   <!-- Fourth Section-->
   <div class="img-4">
