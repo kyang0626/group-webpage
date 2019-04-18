@@ -17,6 +17,7 @@ function initMap() {
           lat: position.coords.latitude,
           lng: position.coords.longitude
         };
+        console.log(position)
         // console.log(pos)
         // console.log(pos.lat)
         // console.log(pos.lng)
@@ -65,8 +66,12 @@ function initMap() {
             marker.addListener('click', function() {
               infowindow.open(map, marker);
             });
-
+            console.log("name: "+ response.results[i].name + " address: "+ response.results[i].vicinity + " rating: "+ response.results[i].rating + " price: "+ response.results[i].price_level)
+            // $("#location]-Info").text("name: "+ response.results[i].name + " address: "+ response.results[i].vicinity + " rating: "+ response.results[i].rating + " price: "+ response.results[i].price_level)
             // console.log(marker)
+
+            $("#location-Info").append("name: "+ response.results[i].name + "<br>"+" address: "+ response.results[i].vicinity + "<br>"+" rating: "+ response.results[i].rating + "<br>"+" price: "+ response.results[i].price_level+"<br>" + "--------------" + "<br>")
+            console.log("name: "+ response.results[i].name + "<br>"+" address: "+ response.results[i].vicinity + "<br>"+" rating: "+ response.results[i].rating + "<br>"+" price: "+ response.results[i].price_level+"<br>" + "--------------" + "<br>")
           }
         });
       }, function() {

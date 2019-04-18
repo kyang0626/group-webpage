@@ -18,7 +18,7 @@
   <!--- Jquery --->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js"></script>
 
-  <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
   <!---CORS proxy-->
   <script>
     jQuery.ajaxPrefilter(function (options) {
@@ -85,9 +85,15 @@
             <h2 class="fs-title">What's Your Location?</h2>
             <h3 class="fs-subtitle">Click Button to Use Geolocator or Manually Enter Location</h3>
             <form action="index.html" method="post">
+<<<<<<< HEAD
               <button>Use My Location</button>
               <input type="text" name="phone" placeholder="Address" />
               <input type="button" name="next" class="next action-button" value="Next" />
+=======
+              <button id="location" >Use My Location</button>
+            <input type="text" name="phone" placeholder="Address" />
+            <input type="button" name="next" class="next action-button" value="Next" />
+>>>>>>> 9bfd36eb7d5c449a9cc71c7e6cce92f85f4a2c40
           </fieldset>
           <fieldset>
             <h2 class="fs-title">What's Your Food Preference?</h2>
@@ -169,6 +175,7 @@
   </div>
 
   <!-- Third Section -->
+<<<<<<< HEAD
   <div class="containter">
     <div id="map"></div>
     <div class="img-3">
@@ -177,6 +184,14 @@
   </div>
 
 
+=======
+  <div class="row" style="width:100%; height:100%">
+      <div class="col-6" id="map" ></div>
+      <div class="col-6">
+        <div id="location-Info"></div>
+      </div>
+</div>
+>>>>>>> 9bfd36eb7d5c449a9cc71c7e6cce92f85f4a2c40
 
   <!-- Fourth Section-->
   <div class="img-4">
