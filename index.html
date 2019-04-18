@@ -22,6 +22,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js"></script>
 
   <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+  <!---CORS proxy-->
+  <script>
+      jQuery.ajaxPrefilter(function(options) {
+        if (options.crossDomain && jQuery.support.cors) {
+            options.url = 'https://uncc-cors-proxy.herokuapp.com/' + options.url;
+        }
+      });
+    </script>
   <!-- CSS for Form -->
   <link rel="stylesheet" href="../group-webpage/assets/css/multistepform.css">
 
@@ -164,15 +172,7 @@
   </div>
 
   <!-- Third Section -->
-  <div class="img-3">
-    <div class="img-text3">
-      Area here is for GOOGLE MAP
-    </div>
-    <div class="google-map">
-
-    </div>
-
-  </div>
+  <div id="map" ></div>
 
   <!-- Fourth Section-->
   <div class="img-4">
@@ -207,7 +207,6 @@
               <li><a href="https://www.twiter.com">Twitter</a></li>
             </ul>
           </div>
-
         </div>
       </div>
       <hr>
@@ -226,8 +225,11 @@
 
 
   <!--- JavaScript --->
-  <script src="../group-webpage/assets/javascript/ilocate.js"></script>
   <script src="../group-webpage/assets/javascript/multistepform.js"></script>
+  <script src="../group-webpage/assets/javascript/main.js"></script>
+  <!--Maps API-->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI9kOmD6qcO2ZqWFHed6KFmxZ8PT6CK8E&callback=initMap">
+  </script>
 </body>
 
 </html>
