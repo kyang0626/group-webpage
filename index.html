@@ -9,8 +9,8 @@
   <!--- CSS --->
   <link rel="stylesheet" type="text/css" href="../group-webpage/assets/css/style.css">
   <!-- Multistep Form CSS -->
-  <link rel="stylesheet" type="text/css" href="../group-webpage/assets/css/multistepform.css">
-  
+  <!-- <link rel="stylesheet" type="text/css" href="../group-webpage/assets/css/multistepform.css"> -->
+
   <!---- Bootstrap --->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -20,7 +20,9 @@
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <!--- Jquery --->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js"></script>
-<!---CORS proxy-->
+
+  <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+  <!---CORS proxy-->
   <script>
       jQuery.ajaxPrefilter(function(options) {
         if (options.crossDomain && jQuery.support.cors) {
@@ -28,24 +30,28 @@
         }
       });
     </script>
+  <!-- CSS for Form -->
+  <link rel="stylesheet" href="../group-webpage/assets/css/multistepform.css">
+
 </head>
 
 <body>
 
   <!-- Navbar --->
   <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: white;">
-    <a class="navbar-brand" style="color: yellow;" href="https://kyang0626.github.io/group-webpage/"><strong>N'STANT <i class="fas fa-utensils"></i></strong></a>
+    <a class="navbar-brand" style="color: yellow;" href="https://kyang0626.github.io/group-webpage/"><strong>N'STANT <i
+          class="fas fa-utensils"></i></strong></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search Food" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0"
-            style="border: 1px solid yellow; background: white; color: yellow; text-shadow: 0px 0px 2px black;"
-            type="submit">Search</button>
-        </form>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search Food" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0"
+        style="border: 1px solid yellow; background: white; color: yellow; text-shadow: 0px 0px 2px black;"
+        type="submit">Search</button>
+    </form>
     </div>
   </nav>
 
@@ -65,54 +71,54 @@
         <input type="search" class="form-control" id="user-location" placeholder="Street, address, city, state">
         <button type="button>" style="background-color: rgb(218, 218, 0); color: white; text-shadow: 0px 2px 4px black;"
           class="btn">Search</button> -->
-      </div>
+    </div>
 
-      <!-- MultiStep Form -->
-<div class="row">
-  <div class="col-md-6 col-md-offset-3">
-      <form id="msform">
+    <!-- MultiStep Form -->
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <form id="msform">
           <!-- progressbar -->
           <ul id="progressbar">
-              <li class="active">Location</li>
-              <li>Food Preferences</li>
-              <li>Price</li>
+            <li class="active">Location</li>
+            <li>Food Preferences</li>
+            <li>Price</li>
           </ul>
           <!-- fieldsets -->
           <fieldset>
-              <h2 class="fs-title">What's Your Location?</h2>
-              <h3 class="fs-subtitle">Enter Your Info:</h3>
-              <input type="text" name="fname" placeholder="Zip Code"/>
-              <input type="text" name="lname" placeholder="City"/>
-              <input type="text" name="phone" placeholder="Address"/>
-              <input type="button" name="next" class="next action-button" value="Next"/>
+            <h2 class="fs-title">What's Your Location?</h2>
+            <h3 class="fs-subtitle">Enter Your Info:</h3>
+            <input type="text" name="fname" placeholder="Zip Code" />
+            <input type="text" name="lname" placeholder="City" />
+            <input type="text" name="phone" placeholder="Address" />
+            <input type="button" name="next" class="next action-button" value="Next" />
           </fieldset>
           <fieldset>
-              <h2 class="fs-title">What's Your Food Preference?</h2>
-              <h3 class="fs-subtitle">Select From The List:</h3>
-              <input type="text" name="twitter" placeholder="Twitter"/>
-              <input type="text" name="facebook" placeholder="Facebook"/>
-              <input type="text" name="gplus" placeholder="Google Plus"/>
-              <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
-              <input type="button" name="next" class="next action-button" value="Next"/>
+            <h2 class="fs-title">What's Your Food Preference?</h2>
+            <h3 class="fs-subtitle">Select From The List:</h3>
+            <input type="text" name="twitter" placeholder="Twitter" />
+            <input type="text" name="facebook" placeholder="Facebook" />
+            <input type="text" name="gplus" placeholder="Google Plus" />
+            <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+            <input type="button" name="next" class="next action-button" value="Next" />
           </fieldset>
           <fieldset>
-              <h2 class="fs-title">What's Your Budget?</h2>
-              <h3 class="fs-subtitle">Select From The List:</h3>
-              <input type="text" name="email" placeholder="Email"/>
-              <input type="password" name="pass" placeholder="Password"/>
-              <input type="password" name="cpass" placeholder="Confirm Password"/>
-              <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
-              <input type="submit" name="submit" class="submit action-button" value="Submit"/>
+            <h2 class="fs-title">What's Your Budget?</h2>
+            <h3 class="fs-subtitle">Select From The List:</h3>
+            <input type="text" name="email" placeholder="Email" />
+            <input type="password" name="pass" placeholder="Password" />
+            <input type="password" name="cpass" placeholder="Confirm Password" />
+            <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+            <input type="submit" name="submit" class="submit action-button" value="Submit" />
           </fieldset>
-      </form>
-  
-  </div>
-</div>
-<!-- /.MultiStep Form -->
+        </form>
 
-
+      </div>
     </div>
-  </div>
+    <!-- /.MultiStep Form -->
+
+
+
+
 
   <!-- Second Section-->
   <div class="img-2">
@@ -201,7 +207,6 @@
               <li><a href="https://www.twiter.com">Twitter</a></li>
             </ul>
           </div>
-          
         </div>
       </div>
       <hr>
@@ -220,6 +225,7 @@
 
 
   <!--- JavaScript --->
+  <script src="../group-webpage/assets/javascript/multistepform.js"></script>
   <script src="../group-webpage/assets/javascript/main.js"></script>
   <!--Maps API-->
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI9kOmD6qcO2ZqWFHed6KFmxZ8PT6CK8E&callback=initMap">

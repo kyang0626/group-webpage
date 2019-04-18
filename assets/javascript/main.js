@@ -30,7 +30,7 @@ function initMap() {
         // this makes the marker appear on the map
         marker.setMap(map);
         // infoWindow.setPosition(pos);
-        // infoWindow.setContent('U R HERE');
+        infoWindow.setContent('U R HERE');
         // infoWindow.open(map);
         map.setCenter(pos);
 
