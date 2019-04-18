@@ -235,5 +235,9 @@ footer {
     font-size: 10px;
 }
 #first-row {
-   margin: 0px 0px;
+   margin: 0px 0px 0px 80px;
+}
+
+div.row {
+    margin: 0px;
 }
