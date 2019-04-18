@@ -20,6 +20,14 @@
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <!--- Jquery --->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js"></script>
+<!---CORS proxy-->
+  <script>
+      jQuery.ajaxPrefilter(function(options) {
+        if (options.crossDomain && jQuery.support.cors) {
+            options.url = 'https://uncc-cors-proxy.herokuapp.com/' + options.url;
+        }
+      });
+    </script>
 </head>
 
 <body>
@@ -158,7 +166,7 @@
   </div>
 
   <!-- Third Section -->
-  <div id="map" class="img-3"></div>
+  <div id="map" ></div>
 
   <!-- Fourth Section-->
   <div class="img-4">
@@ -213,6 +221,9 @@
 
   <!--- JavaScript --->
   <script src="../group-webpage/assets/javascript/main.js"></script>
+  <!--Maps API-->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI9kOmD6qcO2ZqWFHed6KFmxZ8PT6CK8E&callback=initMap">
+  </script>
 </body>
 
 </html>
