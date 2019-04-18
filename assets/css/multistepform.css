@@ -101,12 +101,12 @@ body {
 }
 
 #msform .action-button-previous:hover, #msform .action-button-previous:focus {
-    box-shadow: 0 0 0 2px white, 0 0 0 3px #C5C5F1;
+    box-shadow: 0 0 0 3px white, 0 0 0 4px #C5C5F1;
 }
 
 /*headings*/
 .fs-title {
-    font-size: 18px;
+    font-size: 30px;
     text-transform: uppercase;
     color: #2C3E50;
     margin-bottom: 10px;
@@ -116,8 +116,8 @@ body {
 
 .fs-subtitle {
     font-weight: normal;
-    font-size: 13px;
-    color: #666;
+    font-size: 20px;
+    color: #2C3E50;
     margin-bottom: 20px;
 }
 
@@ -131,9 +131,10 @@ body {
 
 #progressbar li {
     list-style-type: none;
-    color: white;
+    color: black;
+    font-weight: bold;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 20px;
     width: 33.33%;
     float: left;
     position: relative;
@@ -147,7 +148,7 @@ body {
     height: 24px;
     line-height: 26px;
     display: block;
-    font-size: 12px;
+    font-size: 15px;
     color: #333;
     background: white;
     border-radius: 25px;
