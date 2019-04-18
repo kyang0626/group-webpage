@@ -28,6 +28,7 @@ font-size: 28px;
 
 }
 
+
 /*form styles*/
 #msform {
     text-align: center;
@@ -115,6 +116,15 @@ font-size: 28px;
 #msform .action-button-previous:hover, #msform .action-button-previous:focus {
     box-shadow: 0 0 0 3px white, 0 0 0 4px yellow;
 }
+
+
+#msform .reload.action-button {
+    width: 600px;
+    background: yellow;
+
+}
+
+
 
 /*headings*/
 .fs-title {
