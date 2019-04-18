@@ -92,9 +92,9 @@ body {
 
 #msform .action-button-previous {
     width: 100px;
-    background: #C5C5F1;
+    background: orange;
     font-weight: bold;
-    color: white;
+    color: black;
     border: 0 none;
     border-radius: 25px;
     cursor: pointer;
@@ -103,7 +103,7 @@ body {
 }
 
 #msform .action-button-previous:hover, #msform .action-button-previous:focus {
-    box-shadow: 0 0 0 3px white, 0 0 0 4px #C5C5F1;
+    box-shadow: 0 0 0 3px white, 0 0 0 4px yellow;
 }
 
 /*headings*/
