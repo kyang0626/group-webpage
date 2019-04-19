@@ -260,6 +260,10 @@ footer {
 div.row {
     margin: 10px 0px 0px 0px;
 }
+
+div.panel-body {
+    max-width: 100%;
+}
 /* Always set the map height explicitly to define the size of the div
  * element that contains the map. */
  #map {
