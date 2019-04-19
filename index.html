@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>N'Stant</title>
+  <title>N'Stnt</title>
   <!--- CSS --->
   <link rel="stylesheet" type="text/css" href="../group-webpage/assets/css/style.css">
   <!---- Bootstrap --->
@@ -17,6 +17,8 @@
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <!--- Jquery --->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
 
   <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
   <!---CORS proxy-->
@@ -37,7 +39,7 @@
   <!-- Navbar --->
   <nav class="navbar fixed-top navbar-expand-lg navbar-light"
     style="background-color: white; text-shadow: 1px 1px 2px black, -1px -1px 2px transparent;">
-    <a class="navbar-brand" style="color: yellow; text-shadow: 1px 1px 2px black, -1px -1px 2px black;" href="https://kyang0626.github.io/group-webpage/"><strong>N'STANT <i
+    <a class="navbar-brand" data-tilt data-tilt-glare="true" data-tilt-scale="1.1" style="color: yellow; text-shadow: 1px 1px 2px black, -1px -1px 2px black;" href="https://kyang0626.github.io/group-webpage/"><strong>N'STNT <i
           class="fas fa-utensils"></i></strong></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,7 +56,7 @@
         Can't Decide Where To Eat?
       </p>
       <p class="p2">
-        Try <span id="brand">N'STANT</span>
+        Try <span data-tilt data-tilt-glare="true" data-tilt-scale="1.1" id="brand">N'STNT</span>
       </p>
 
     </div>
@@ -75,19 +77,19 @@
             <h3 class="fs-subtitle">Click Button to Use Geolocator</h3>
             <form action="index.html" method="post">
               <!-- <button id="location">Use My Location</button> -->
-              <button id="location" type="button" value="Next" class="btn btn-outline-warning btn-lg btn-block next"
+              <button data-tilt data-tilt-glare="true" data-tilt-scale="1.1" id="location" type="button" value="Next" class="btn btn-outline-warning btn-lg btn-block next"
                 style="width: 92%; background-color: yellow; color: white; text-shadow: 1px 1px 2px black;">Use My Location</button>
               <!-- <input type="text" name="phone" placeholder="Address" /> -->
               <!-- <input type="button" name="next" class="next action-button" value="Next" /> -->
           </fieldset>
           <fieldset style="width:100%; height:100%;">
             <div id="map"></div>
-            <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
-            <input type="button" name="next" class="next action-button" value="Next" />
+            <input data-tilt data-tilt-glare="true" data-tilt-scale="1.1" type="button" name="previous" class="previous action-button-previous" value="Previous" />
+            <input data-tilt data-tilt-glare="true" data-tilt-scale="1.1" type="button" name="next" class="next action-button" value="Next" />
           </fieldset>
           <fieldset>
             <h2 class="fs-title">You Restaurant Options</h2>
-            <h3 class="fs-subtitle">Get Your Food This N'STANT!</h3>
+            <h3 class="fs-subtitle">Get Your Food This N'STNT!</h3>
 
 
             <!--  Restaurant Table within MultiStep Form  -->
@@ -117,7 +119,7 @@
 
               <input id="reload" button id="hidden" type="button" style="visibility:hidden;" name="reload"
               class="reload action-button" value="Start Over" onclick="window.location.reload()" />
-            <input id="reload" button id="reload" type="button" name="reload" class="reload action-button btn-block" value="Try Again"
+            <input data-tilt data-tilt-glare="true" data-tilt-scale="1.1" id="reload" button id="reload" type="button" name="reload" class="reload action-button btn-block" value="Try Again"
               onclick="window.location.reload()" />
 
           </fieldset>
@@ -140,7 +142,7 @@
       <div class="img-text2">
         <span class="p">HOW To</span>
         <br>
-        <span class="border-trans">get your food this <span class="brand"> N'STANT <i
+        <span class="border-trans">get your food this <span class="brand"> N'STNT <i
               class="fas fa-utensils-alt"></i></span></span>
         <!-- Take off black border when done with rows and columns -->
         <div class="container">
@@ -166,15 +168,15 @@
 
             </div>
             <div class="col-lg-3">
-              <img class="icon" src="../group-webpage/assets/images/location-icon.png" width=100px height=100px alt="">
+              <img data-tilt data-tilt-glare="true" data-tilt-scale="1.1" class="icon" src="../group-webpage/assets/images/location-icon.png" width=100px height=100px alt="">
               <!-- Insert Custom Image-->
             </div>
             <div class="col-lg-3">
-              <img class="icon" src="../group-webpage/assets/images/food-icon.png" width=100px height=100px alt="">
+              <img data-tilt data-tilt-glare="true" data-tilt-scale="1.1" class="icon" src="../group-webpage/assets/images/food-icon.png" width=100px height=100px alt="">
               <!-- Insert Custom Image-->
             </div>
             <div class="col-lg-3">
-              <img class="icon" src="../group-webpage/assets/images/submit-icon.png" width=100px height=100px alt="">
+              <img data-tilt data-tilt-glare="true" data-tilt-scale="1.1" class="icon" src="../group-webpage/assets/images/submit-icon.png" width=100px height=100px alt="">
               <!-- Insert Custom Image-->
             </div>
             <div class="col-lg-2">
@@ -191,14 +193,14 @@
   <!-- Fourth Section-->
   <div class="img-4">
     <div class="img-text4">
-      <div class="section-intro"><span class="question">What is N'STANT?</span><br>N'Stant is simply way to decide on
+      <div class="section-intro"><span class="question">What is N'STNT?</span><br>N'STNT is simply way to decide on
         what to eat base on the time and place. <br>It helps by having a list of suggesstions near or far from your
         location. <br>Effortlessly navigate through the options and choose from the following.<br>
         Users use either their location or set a location. <br> The user
         is presented with the map showing all restaurants around his location or location set. <br>From there he can 
         choose a restaurant
         based on the price, the rating and the address.</div>
-      <div id="legal-info" class="containter">
+      <!-- <div id="legal-info" class="containter">
         <div class="row" id="first-row">
           <div class="col-lg-1">
 
@@ -222,6 +224,27 @@
             </ul>
           </div>
         </div>
+      </div> -->
+      <hr>
+      <div class="row">
+        <div class="col">
+          <div id="portfolioContainer" class="row">
+            <div data-tilt data-tilt-glare="true" data-tilt-scale="1.1" id="portfolio" class="col-2">Julie</div>
+            <div data-tilt data-tilt-glare="true" data-tilt-scale="1.1" id="portfolio" class="col-2">Kong</div>
+            <div data-tilt data-tilt-glare="true" data-tilt-scale="1.1" id="portfolio" class="col-2">Yawo</div>
+            <div data-tilt data-tilt-glare="true" data-tilt-scale="1.1" id="portfolio" class="col-2">Jeremiah</div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div id="portfolioContainer" class="row">
+            <div id="portfolioLink"><a href="#"><i class="fab fa-github-square"></i></a></div>
+            <div id="portfolioLink"><a href="https://kyang0626.github.io/portfolio/"><i class="fab fa-github-square"></i></a></div>
+            <div id="portfolioLink"><a href="https://tyawo.github.io/Responsive-Portfolio/""><i class="fab fa-github-square"></i></a></div>
+            <div id="portfolioLink"><a href="https://jthorn70.github.io/Responsove-Portfolio/"><i class="fab fa-github-square"></i></a></div>
+          </div>
+        </div>
       </div>
       <hr>
       <div class="advertisement">
@@ -237,7 +260,6 @@
 
 
 
-
   <!--- JavaScript --->
   <script src="../group-webpage/assets/javascript/multistepform.js"></script>
   <script src="../group-webpage/assets/javascript/main.js"></script>
@@ -245,6 +267,7 @@
   <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI9kOmD6qcO2ZqWFHed6KFmxZ8PT6CK8E&callback=initMap">
     </script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/130527/vanilla-tilt.min.js"></script>
 </body>
 
 </html>
