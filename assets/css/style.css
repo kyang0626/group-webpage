@@ -288,3 +288,22 @@ div.row {
     width: 100%;
     height: 100%;
   }
+
+  #portfolio{
+    height: 100px;
+    width: 100px;
+    background-color: orange;
+    background-image: linear-gradient(150deg, #5a00ff 0%, #ff1ff7 100%, #ff1ff7 100%);
+    margin: 10px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    
+}
+#portfolioContainer{
+    justify-content: center;
+    height: 100px;
+    text-align: center
+}
+#portfolioLink{
+    margin: 0px 125px 0px 125px;
+}
