@@ -1,6 +1,6 @@
 # group-webpage
 
-webpage url: https://kyang0626.github.io/group-webpage/
+webpage url: https://kyang0626.github.io/N'STANT/
 
 INTRODUCTION to N'STANT
 
